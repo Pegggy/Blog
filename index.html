@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>我的第一个博客</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+	<script type="text/javascript" src="https://typo.sofi.sh/typo.css"></script>
+	<meta name="viewport" content="width=device-width,user-scalabe =no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+</head>
+<body>
+<div id="content">
+# 截图
+全屏截图：command+shift+3  
+局部截图：command+shift+4
+
+# 快速切换
+打开spotlight：command+空格  
+切换程序：command+tab  
+快速切回桌面：鼠标移到屏幕右下角（针对本机）   
+显示打开的所有程序：三指向上推  
+切换输入法：option+空格（针对本机） 
+# Finder中
+Command-Delete 将文件移至废纸篓　　
+Command-Shift-Delete 清倒废纸篓　　
+</div>
+<script type="text/javascript">
+	var content = document.getElementById('content');
+	var markdown = content.innerHTML;
+	content.innerHTML = marked(markdown);
+</script>
+</body>
+</html>
