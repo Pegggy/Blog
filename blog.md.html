@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>我的第一个博客</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://typo.sofi.sh/typo.css">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+</head>
+<body>
+<div id="content">
+# 命令行vim操作
+
+vim中有两种模式： 
+
+命令模式，用于输入命令(注意输入法要在英文状态)，例如： 
+- shift+V 可以选中一行 
+- y 复制一行 
+- p 在当前行下方粘贴复制的内容 
+- d$ 删除到行尾 
+- x 删除一个字符 
+- :wq 保存退出 
+- :q! 不保存退出 
+-i 进入编辑模式
+
+编辑模式：用于编辑按ESC可以切换回命令模式。
+
+确认编辑正确之后，使用:wq保存返回到命令行；
+
+</div>
+<script type="text/javascript">
+	var content = document.getElementById('content');
+	var markdown = content.innerHTML;
+	content.innerHTML = marked(markdown);
+</script>
+</body>
+</html>
